@@ -11,6 +11,13 @@
 		76974A0E2B5AA9F100AAD7AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76974A0D2B5AA9F100AAD7AD /* ContentView.swift */; };
 		76974A102B5AA9F400AAD7AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76974A0F2B5AA9F400AAD7AD /* Assets.xcassets */; };
 		76974A132B5AA9F400AAD7AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76974A122B5AA9F400AAD7AD /* Preview Assets.xcassets */; };
+		76974A1C2B5AB2F400AAD7AD /* NetworkLayer in Frameworks */ = {isa = PBXBuildFile; productRef = 76974A1B2B5AB2F400AAD7AD /* NetworkLayer */; };
+		76974A1F2B5AB34F00AAD7AD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76974A1E2B5AB34F00AAD7AD /* NetworkManager.swift */; };
+		76974A262B5AB88700AAD7AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76974A252B5AB88700AAD7AD /* Constants.swift */; };
+		76974A282B5ABB3C00AAD7AD /* AppHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76974A272B5ABB3C00AAD7AD /* AppHeaders.swift */; };
+		76974A2A2B5ABBFD00AAD7AD /* AppEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76974A292B5ABBFD00AAD7AD /* AppEndPoints.swift */; };
+		76974A2C2B5ABDC600AAD7AD /* AppParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76974A2B2B5ABDC600AAD7AD /* AppParameters.swift */; };
+		76974A312B5ABF2200AAD7AD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76974A302B5ABF2200AAD7AD /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,14 @@
 		76974A0D2B5AA9F100AAD7AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76974A0F2B5AA9F400AAD7AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76974A122B5AA9F400AAD7AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		76974A192B5AB2C800AAD7AD /* NetworkLayer */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkLayer; path = ../../SwiftUI/Libraries/NetworkLayer; sourceTree = "<group>"; };
+		76974A1E2B5AB34F00AAD7AD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		76974A222B5AB75200AAD7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		76974A252B5AB88700AAD7AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76974A272B5ABB3C00AAD7AD /* AppHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHeaders.swift; sourceTree = "<group>"; };
+		76974A292B5ABBFD00AAD7AD /* AppEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEndPoints.swift; sourceTree = "<group>"; };
+		76974A2B2B5ABDC600AAD7AD /* AppParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppParameters.swift; sourceTree = "<group>"; };
+		76974A302B5ABF2200AAD7AD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76974A1C2B5AB2F400AAD7AD /* NetworkLayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +51,10 @@
 		769749FF2B5AA9F100AAD7AD = {
 			isa = PBXGroup;
 			children = (
+				76974A192B5AB2C800AAD7AD /* NetworkLayer */,
 				76974A0A2B5AA9F100AAD7AD /* Cinergy */,
 				76974A092B5AA9F100AAD7AD /* Products */,
+				76974A1A2B5AB2F400AAD7AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +69,12 @@
 		76974A0A2B5AA9F100AAD7AD /* Cinergy */ = {
 			isa = PBXGroup;
 			children = (
+				76974A222B5AB75200AAD7AD /* Info.plist */,
+				76974A2F2B5ABE8D00AAD7AD /* Model */,
+				76974A2E2B5ABE8700AAD7AD /* View */,
+				76974A2D2B5ABE6200AAD7AD /* ViewModels */,
+				76974A202B5AB69200AAD7AD /* Utils */,
+				76974A1D2B5AB32300AAD7AD /* Network */,
 				76974A0B2B5AA9F100AAD7AD /* CinergyApp.swift */,
 				76974A0D2B5AA9F100AAD7AD /* ContentView.swift */,
 				76974A0F2B5AA9F400AAD7AD /* Assets.xcassets */,
@@ -65,6 +89,54 @@
 				76974A122B5AA9F400AAD7AD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		76974A1A2B5AB2F400AAD7AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76974A1D2B5AB32300AAD7AD /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				76974A1E2B5AB34F00AAD7AD /* NetworkManager.swift */,
+				76974A272B5ABB3C00AAD7AD /* AppHeaders.swift */,
+				76974A2B2B5ABDC600AAD7AD /* AppParameters.swift */,
+				76974A292B5ABBFD00AAD7AD /* AppEndPoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		76974A202B5AB69200AAD7AD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				76974A252B5AB88700AAD7AD /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		76974A2D2B5ABE6200AAD7AD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				76974A302B5ABF2200AAD7AD /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		76974A2E2B5ABE8700AAD7AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76974A2F2B5ABE8D00AAD7AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +155,9 @@
 			dependencies = (
 			);
 			name = Cinergy;
+			packageProductDependencies = (
+				76974A1B2B5AB2F400AAD7AD /* NetworkLayer */,
+			);
 			productName = Cinergy;
 			productReference = 76974A082B5AA9F100AAD7AD /* Cinergy.app */;
 			productType = "com.apple.product-type.application";
@@ -137,8 +212,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76974A2C2B5ABDC600AAD7AD /* AppParameters.swift in Sources */,
+				76974A1F2B5AB34F00AAD7AD /* NetworkManager.swift in Sources */,
+				76974A282B5ABB3C00AAD7AD /* AppHeaders.swift in Sources */,
+				76974A312B5ABF2200AAD7AD /* HomeViewModel.swift in Sources */,
 				76974A0E2B5AA9F100AAD7AD /* ContentView.swift in Sources */,
 				76974A0C2B5AA9F100AAD7AD /* CinergyApp.swift in Sources */,
+				76974A2A2B5ABBFD00AAD7AD /* AppEndPoints.swift in Sources */,
+				76974A262B5AB88700AAD7AD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +356,7 @@
 				DEVELOPMENT_TEAM = 9YC7UP4F29;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cinergy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +386,7 @@
 				DEVELOPMENT_TEAM = 9YC7UP4F29;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cinergy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +427,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76974A1B2B5AB2F400AAD7AD /* NetworkLayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkLayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76974A002B5AA9F100AAD7AD /* Project object */;
 }
